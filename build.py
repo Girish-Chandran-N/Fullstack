@@ -6,6 +6,7 @@ import data as D
 BASE = os.path.dirname(os.path.abspath(__file__))
 ASSETS = os.path.join(BASE, "assets")
 OUT = os.path.join(BASE, "Full-Stack-Roadmap-Kerala.html")
+INDEX = os.path.join(BASE, "index.html")
 
 def img64(name, maxw, quality=82):
     im = Image.open(os.path.join(ASSETS, name)).convert("RGB")
@@ -2696,5 +2697,8 @@ assert not _left, "unresolved placeholders: %s" % set(_left)
 
 with open(OUT, "w", encoding="utf-8") as f:
     f.write(HTML)
+with open(INDEX, "w", encoding="utf-8") as f:
+    f.write(HTML)
 print("wrote", OUT, len(HTML), "chars")
+print("wrote", INDEX, len(HTML), "chars")
 print("checkpoints:", TOTAL_CHECKS)
