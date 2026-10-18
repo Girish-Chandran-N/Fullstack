@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Environment & temp
+.sudo_as_admin_successful
+image-search/
